@@ -90,6 +90,11 @@
     height: 280px;
     width: 280px;
     padding-bottom: 21px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @media (min-width: 768px) {
       height: 270px;
@@ -99,6 +104,14 @@
     @media (min-width: 1280px) {
       height: 370px;
       width: 370px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 
@@ -124,7 +137,7 @@
     line-height: 24px;
     color: $grey-font-color;
     width: 280px;
-    
+
     @media (min-width: 768px) {
       width: 270px;
     }

@@ -81,6 +81,11 @@
     font-family: Raleway, Arial, sans-serif;
     color: $light-font-color;
     line-height: 24px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__list {

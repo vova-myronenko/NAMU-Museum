@@ -10,6 +10,11 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="shortcut icon"
+      href="./images/namu-logo.svg"
+      type="image/x-icon"
+    >
     <script
       type="text/javascript"
       src="scripts/main.js"
@@ -89,9 +94,9 @@
             <span class="nav__address-title">
               Адреса:
             </span>
-            <span class="nav__address-content">
+            <a class="nav__address-content" href="https://goo.gl/maps/ZnNoqvCoKEX7YAoA9">
               Київ, вул. М. Грушевського, 6
-            </span>
+            </a>
           </div>
 
           <ul class="nav__list">
@@ -325,15 +330,17 @@
               src="./images/pictures/news-pic-1.png"
               alt="three pictures for winners"
             >
-            <p class="news__date">
+            <a href="" class="news__link">
+              <p class="news__date">
               9 серпня 2019
-            </p>
-            <h4 class="news__article-heading">
-              Оголошення переможця
-            </h4>
-            <p class="news__article-description">
-              Друзі, сьогодні п'ятниця! А це означає, що час оголосити...
-            </p>
+              </p>
+              <h4 class="news__article-heading">
+                Оголошення переможця
+              </h4>
+              <p class="news__article-description">
+                Друзі, сьогодні п'ятниця! А це означає, що час оголосити...
+              </p>
+            </a>
           </article>
           <article class="news__second-article">
             <img
@@ -341,15 +348,17 @@
               src="./images/pictures/news-pic-2.png"
               alt="cat and mouse"
             >
-            <p class="news__date">
-              9 серпня 2019
-            </p>
-            <h4 class="news__article-heading">
-              Міжнародний день котів
-            </h4>
-            <p class="news__article-description">
-              Музей з левами не може просто так взяти і пропустити Міжнародн...
-            </p>
+            <a href="" class="news__link">
+              <p class="news__date">
+                9 серпня 2019
+              </p>
+              <h4 class="news__article-heading">
+                Міжнародний день котів
+              </h4>
+              <p class="news__article-description">
+                Музей з левами не може просто так взяти і пропустити Міжнародн...
+              </p>
+            </a>
           </article>
           <article class="news__third-article">
             <img
@@ -357,15 +366,17 @@
               src="./images/pictures/news-pic-3.png"
               alt="two horsemen"
             >
-            <p class="news__date">
-              9 серпня 2019
-            </p>
-            <h4 class="news__article-heading">
-              200 років П. Кулішу
-            </h4>
-            <p class="news__article-description">
-              Поруч із Тарасом Шевченком це найважливіша постать в українській культурі ХІХ століття...
-            </p>
+            <a href="" class="news__link">
+              <p class="news__date">
+                9 серпня 2019
+              </p>
+              <h4 class="news__article-heading">
+                200 років П. Кулішу
+              </h4>
+              <p class="news__article-description">
+                Поруч із Тарасом Шевченком це найважливіша постать в українській культурі ХІХ століття...
+              </p>
+            </a>
           </article>
           <a class="news__all-news-link" href="">
             Усі новини
@@ -399,7 +410,12 @@
           <p class="subscribe__description">
             Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів
           </p>
-          <form class="subscribe__form" action="">
+          <form
+            class="subscribe__form"
+            action=""
+            method="get"
+            id="form1"
+          >
             <input
               class="subscribe__input"
               type="email"
@@ -407,8 +423,15 @@
               placeholder="e-mail"
               required
             >
-            <button class="subscribe__button" type="submit">
-              <img src="./images/subscribe-button.svg" alt="subscribe-button">
+            <button
+              class="subscribe__button"
+              type="submit"
+              form="form1"
+            >
+              <img
+                src="./images/subscribe-button.svg"
+                alt="subscribe-button"
+              >
             </button>
           </form>
         </div>
@@ -428,17 +451,23 @@
           <h4 class="footer__block-heading">
             Контакти
           </h4>
-          <p class="footer__content-block">
+          <a class="footer__address" href="https://goo.gl/maps/ZnNoqvCoKEX7YAoA9">
             Київ,
             <br>
             вул. М. Грушевського, 6
-            <br>
+          </a>
+          <br>
+          <a class="footer__phone" href="tel:+380442781357">
             тел. 278-13-57
-            <br>
+          </a>
+          <br>
+          <a class="footer__phone" href="tel:+380442787454">
             278-74-54
-            <br>
+          </a>
+          <br>
+          <a class="footer__email" href="mailto:">
             info@namu.kiev.ua
-          </p>
+          </a>
 
           <ul class="footer__our-media-list">
             <li class="footer__our-media-item">

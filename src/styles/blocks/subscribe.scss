@@ -104,7 +104,7 @@
   }
 
   &__button {
-    visibility: hidden;
+    visibility: visible;
     height: 42px;
     width: 42px;
     border: none;
@@ -112,7 +112,7 @@
     background-color: transparent;
   }
 
-  &__input:focus + .subscribe__button {
-    visibility: visible;
-  }
+  // &__input:focus + .subscribe__button {
+  //   visibility: visible;
+  // }
 }
